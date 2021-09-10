@@ -406,8 +406,10 @@ class LayerInputBaselineXGradient(LayerAttribution, GradientAttribution):
         Tensor, Tuple[Tensor, ...], Tuple[Union[Tensor, Tuple[Tensor, ...]], Tensor]
     ]:
         inputs, baselines = _format_input_baseline(inputs, baselines)
-        rand_coefficient = torch.tensor(
-            np.random.uniform(0.0, 1.0, inputs[0].shape[0]),
+
+        # random numbers uniformly from [0, 1)
+        rand_coefficient = torch.rand(
+            inputs[0].shape[0],
             device=inputs[0].device,
             dtype=inputs[0].dtype,
         )
