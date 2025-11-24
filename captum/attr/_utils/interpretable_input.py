@@ -109,7 +109,6 @@ class InterpretableInput(ABC):
     """
 
     n_itp_features: int
-    values: List[str]
 
     @abstractmethod
     def to_tensor(self) -> Tensor:
