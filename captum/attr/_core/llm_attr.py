@@ -1206,6 +1206,12 @@ class RemoteLLMAttribution(LLMAttribution):
         target_tokens: Tensor,
         use_cached_outputs: bool = False,
         _inspect_forward: Optional[Callable[[str, str, List[float]], None]] = None,
+        # forward_in_tokens here is for compatibility only
+        # for remote, depend on the underlying LLM API
+        # may not be able to support generate the exact
+        # target tokens one by one (forced decoding)
+        # VLLMProvider for now only support concat sequence forward
+        forward_in_tokens: bool = False,
     ) -> Tensor:
         """
         Forward function for the remote LLM provider.
