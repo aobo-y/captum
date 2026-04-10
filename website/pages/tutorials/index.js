@@ -102,6 +102,19 @@ class TutorialHome extends React.Component {
                 step-by-step improvements from the basic attribution setting to
                 more advanced techniques. Find the tutorial{' '}
                 <a href="Llama2_LLM_Attribution">here</a>.
+                <h4>
+                  Image Segment Attribution for Multi-Modal LLMs:
+                </h4>
+                This tutorial demonstrates how to use Captum's
+                {' '}<code>ImageMaskInput</code> to perform image segment
+                saliency analysis on Multi-Modal Large Language Models
+                (MM-LLMs). It covers two segmentation approaches —
+                grid-based and SAM-2 semantic segmentation — and shows how
+                to apply <code>FeatureAblation</code> with{' '}
+                <code>LLMAttribution</code> to understand which image
+                regions contribute most to the model's generated text
+                response. Find the tutorial{' '}
+                <a href="Multimodal_Image_Segment_Attribution">here</a>.
                 <h4>Interpreting question answering with BERT Part 1:</h4>
                 This tutorial demonstrates how to use Captum to interpret a BERT
                 model for question answering. We use a pre-trained model from

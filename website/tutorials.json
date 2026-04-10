@@ -51,6 +51,10 @@
       "title": "Understanding Llama2 with Captum LLM Attribution"
     },
     {
+      "id": "Multimodal_Image_Segment_Attribution",
+      "title": "Image Segment Attribution for Multi-Modal LLMs"
+    },
+    {
       "title": "Interpreting BERT",
       "children": [
         {
