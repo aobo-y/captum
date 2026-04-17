@@ -71,7 +71,7 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
-exclude = ["tests", "tests.*"]
+include = ["captum", "captum.*"]
 
 [tool.setuptools.dynamic]
 # This imports captum to read __version__, so build with the same minimum
